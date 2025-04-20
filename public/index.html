@@ -1,0 +1,58 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bot Health Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="controls">
+        <div>
+            <button id="forward"><i class="ri-arrow-up-s-fill"></i></button>
+        </div>
+        <div>
+            <button id="left"><i class="ri-arrow-left-s-fill"></i></i></button>
+            <button id="back"><i class="ri-arrow-down-s-fill"></i></i></button>
+            <button id="right"><i class="ri-arrow-right-s-fill"></i></button>
+        </div>
+    </div>
+    <!-- Health Bar -->
+    <div>
+        <span id="healthText">0</span>
+        <div class="bar">
+            <div id="healthValue" class="bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- Hunger Bar -->
+    <div>
+        <span id="hungerText">0</span>
+        <div class="bar">
+            <div id="hungerValue" class="bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- xp Bar -->
+    <div>
+        <span id="xpText">0</span>
+        <div class="bar">
+            <div id="xpValue" class="bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- Position -->
+    <div>
+        <span id="positionText">Position: Loading...</span>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>

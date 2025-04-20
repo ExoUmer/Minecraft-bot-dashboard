@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, Arial, sans-serif;
+    color: white;
+    padding: 2rem;
+    background: #333333;
+    background: radial-gradient(circle, rgba(51, 51, 51, 1) 0%, rgba(23, 23, 23, 1) 100%);
+}
+
+.controls {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.controls button {
+    background: #4caf50;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.controls button:hover {
+    background: #45a049;
+}
+
+/* #healthBar {
+    width: 200px;
+    height: 25px;
+    background: #ddd;
+    border: 1px solid #999;
+    position: relative;
+    margin: 0.5rem 0rem;
+
+}
+
+#healthValue {
+    height: 100%;
+    background: #4caf50;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+#hungerBar {
+    width: 200px;
+    height: 25px;
+    background: #ddd;
+    border: 1px solid #999;
+    position: relative;
+    margin-top: 1rem;
+}
+
+#hungerValue {
+    height: 100%;
+    background: #4caf50;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+} */
+.bar {
+    width: 200px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+#healthValue {
+    background-color: #4caf50;
+}
+
+#hungerValue {
+    background-color: #ff9800;
+}
+#xpValue {
+    background-color: lightblue;
+}
